@@ -1,0 +1,295 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Proiect_DAW_Cinemavazut
+build_property.RootNamespace = Proiect_DAW_Cinemavazut
+build_property.ProjectDir = D:\Files\University\ANUL4_S1\DAW\Proiect_DAW_Cinemavazut\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Files\University\ANUL4_S1\DAW\Proiect_DAW_Cinemavazut
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Achievements/Badges.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXEJhZGdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Achievements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Achievements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Achievements/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Achievements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Achievements/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNoaWV2ZW1lbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Categorii_filme/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlpX2ZpbG1lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Categorii_filme/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlpX2ZpbG1lXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Categorii_filme/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlpX2ZpbG1lXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Categorii_filme/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlpX2ZpbG1lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Categorii_filme/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlpX2ZpbG1lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/FilmCategories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUNhdGVnb3JpZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/FilmCategories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUNhdGVnb3JpZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/FilmCategories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUNhdGVnb3JpZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/FilmCategories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUNhdGVnb3JpZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/FilmCategories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUNhdGVnb3JpZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/Favorite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcRmF2b3JpdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/Galerie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcR2FsZXJpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/GaleriePersonala.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcR2FsZXJpZVBlcnNvbmFsYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/PaginaFilm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcUGFnaW5hRmlsbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme/Watchlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVcV2F0Y2hsaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_urmatoare/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdXJtYXRvYXJlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_urmatoare/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdXJtYXRvYXJlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_urmatoare/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdXJtYXRvYXJlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_urmatoare/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdXJtYXRvYXJlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_urmatoare/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdXJtYXRvYXJlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_vazute/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdmF6dXRlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_vazute/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdmF6dXRlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_vazute/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdmF6dXRlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_vazute/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdmF6dXRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Filme_vazute/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVfdmF6dXRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Home/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/Test14.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxUZXN0MTQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/Test15.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxUZXN0MTUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/Test4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxUZXN0NC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/TestFailed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxUZXN0RmFpbGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Quizuri/TestResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpenVyaVxUZXN0UmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Recenzii/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Recenzii/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Recenzii/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Recenzii/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Recenzii/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Utilizatori/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvcmlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Utilizatori/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvcmlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Utilizatori/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvcmlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Utilizatori/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvcmlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Utilizatori/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvcmlcRWRpdFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Utilizatori/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvcmlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Utilizatori/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvcmlcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Utilizatori/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvcmlcU2lnbkluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Files/University/ANUL4_S1/DAW/Proiect_DAW_Cinemavazut/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uktwmyqtod
