@@ -1,0 +1,74 @@
+﻿body {
+    background-color: lightsteelblue;
+}
+.container {
+    display: flex; /* Stabilește container-ul ca un flex container */
+    align-items: center; /* Aliniază elementele pe centru vertical */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    /*border:5px solid #000000;*/
+    width:75%;
+    margin-top:20px;
+}
+
+.text-box {
+     /* Permite ca text-box să umple spațiul disponibil */
+    /* Spațiu între text și imagini */
+    background-color: goldenrod;
+    height :120px;
+    width: 600px;
+    text-align: center;
+    font-size:25px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 15px;
+    margin-left:-50px;
+    
+}
+
+.images-box {
+    display: flex; /* Stabilește images-box ca un flex container */
+    flex-direction: row; /* Așază imaginile într-o coloană */
+}
+
+.images-box img {
+    margin-bottom: 10px; /* Spațiu între imagini */
+    width: 150px; /* Lățimea imaginilor */
+    height: auto; /* Înălțimea se ajustează automat */
+    margin-top: 5px;
+    margin-left:15px;
+    transition: transform 0.3s ease;
+}
+
+.images-box img:hover {
+    transform: scale(1.1); /* Mărește imaginea la 110% din mărimea sa originală la hover */
+}
+
+.badge-container {
+    position: relative;
+    display: inline-block;
+}
+
+.badge-container .hover-text {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size:18px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 0px;
+    height:60px;
+}
+
+.badge-container:hover .hover-text {
+    opacity: 1;
+}
+
+.txt{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

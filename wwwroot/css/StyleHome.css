@@ -1,0 +1,15 @@
+﻿body {
+    /*background-image: linear-gradient(120deg, #010e21, 65%, ghostwhite, white, white, white);*/
+    background-image: url(../css/banner.png);
+    background-size: 1550px;
+    background-position: 0 60px;
+    background-repeat: no-repeat;
+}
+
+#img {
+    margin:0px 0px 0px -150px;
+    position: absolute; 
+    height: auto;
+    width: 100%;
+    margin-right: 
+}

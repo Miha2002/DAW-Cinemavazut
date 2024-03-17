@@ -1,0 +1,290 @@
+﻿
+
+body {
+    background-image: linear-gradient(black, gray);
+    ;
+}
+
+#grid_pagina {
+    display: grid;
+    width:100%;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-areas: "poza descriere"
+                        "recenzii recenzii";
+}
+
+#poza {
+    grid-area: poza;
+    background-color: black;
+    border: 2px solid;
+    border-radius: 12px;
+    width: 100%;
+}
+
+#descriere {
+    grid-area: descriere;
+    background-image: linear-gradient(to bottom right, indianred, navajowhite);
+    border: 2px solid;
+    border-radius:12px;
+    width: 100%;
+}
+
+#recenzii {
+    margin-top: 50px;
+    grid-area: recenzii;
+    background-image: linear-gradient(to bottom left, navajowhite, indianred);
+    border: 2px solid gray;
+    border-radius: 12px;
+}
+
+.img_film {
+    width: 320px;
+    height: 500px;
+    border-radius: 12px;
+    /*margin: 20px 20px 20px 100px;*/
+}
+
+#descriere .content {
+    margin: 20px 20px 20px 50px;
+}
+
+.grid_desc {
+    display: grid;
+    grid-template-columns: 0.75fr  0.25fr;
+    grid-template-areas: "titlu  checkbox";
+    margin-top: 20px;
+}
+
+
+#titlu {
+    grid-area: titlu;
+    margin-top:20px;
+}
+
+#checkbox {
+    border: 5px solid darkred;
+    border-radius: 12px;
+    width: 210px;
+    background-color: darkred;
+    color: ghostwhite;
+
+    grid-area: checkbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc{
+    margin-top:40px;
+}
+
+.details{
+    margin-top:20px;
+}
+
+.quiz {
+    text-decoration: none;
+    border: 5px solid darkred;
+    font-size: 20px;
+    padding:5px;
+    border-radius: 12px;
+    background-color: darkred;
+    color: ghostwhite;
+}
+
+
+#grid_comment {
+    display: grid;
+    grid-template-columns: 0.15fr 0.85fr;
+    grid-template-areas: "nume comentariu"
+                        "nume comentariu2"
+                        "nume comentariu3";
+    margin-top: 20px;
+}
+
+#nume {
+    grid-area: nume;
+    margin-top: 20px;
+}
+
+#comentariu {
+    grid-area: comentariu;
+    margin: 10px 20px 10px 20px;
+}
+
+#comentariu2 {
+    grid-area: comentariu;
+    margin: 10px 20px 10px 20px;
+    font-size: 18px;
+}
+
+#comentariu3 {
+    grid-area: comentariu;
+    margin: 10px 20px 10px 20px;
+    font-size: 18px;
+}
+
+#border-comment {
+    border: 2px solid gray;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+#btn-recenzie {
+    padding-left: 10px;
+    margin: 20px 20px 20px 20px; 
+    border: 2px solid gray; 
+    border-radius: 12px;
+    background-color: lightgray; 
+    width:150px;
+}
+
+
+#watchlist-1 {
+    text-decoration: none;
+    position: fixed;
+    right: 60px;
+    bottom: 50px;
+    border: 4px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+    opacity: 20%;
+    transition: 0.3s;
+}
+#watchlist-1:hover {
+    opacity: 100%;
+}
+
+#watchlist-2 {
+    text-decoration:none;
+    position: fixed;
+    right: 60px;
+    bottom: 50px;
+    border: 4px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    border-radius: 50%;
+    opacity: 20%;
+    transition: 0.3s;
+}
+
+#watchlist-2:hover {
+    opacity: 100%;
+}
+
+
+
+/* BUTOANE FAVORIT SI VAZUT */
+
+/*label {*/
+    /* Presentation */
+    /*font-size: 48px;
+    margin-right: 10px;
+  }*/
+  
+  /* Required Styling */
+  
+  /*label input[type="checkbox"] {
+    display: none;
+  }
+
+  /buton favorit/  
+  .custom-checkbox {
+    margin-left: 2em;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .custom-checkbox .glyphicon {
+    color: gold;
+    position: absolute;
+    top: 0.4em;
+    left: -1.25em;
+    font-size: 0.75em;
+  }
+  
+  .custom-checkbox .glyphicon-star-empty {
+    color: gray;
+  }
+  
+  .custom-checkbox .glyphicon-star {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .custom-checkbox:hover .glyphicon-star{
+    opacity: 0.5;
+  }
+  
+  .custom-checkbox input[type="checkbox"]:checked ~ .glyphicon-star {
+    opacity: 1;
+  }*/
+
+
+  /* buton check film */
+
+  /*.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 15px;
+  }*/
+  
+  /* Hide default HTML checkbox */
+  /*.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }*/
+  
+  /* The slider */
+  /*.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #0dc522;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ccc;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }*/
+  
+  /* Rounded sliders */
+  /*.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }*/

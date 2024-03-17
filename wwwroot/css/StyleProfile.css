@@ -1,0 +1,105 @@
+﻿body {
+    background-color: gainsboro;
+}
+
+.table {
+    width: 400px;
+}
+
+.table tr:hover {
+    background-color: #b33434;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; 
+}
+
+.left {
+    width: 35%;
+}
+
+.middle {
+    width: 25%;
+}
+
+.right {
+    width: auto;
+    float: right
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button_profile {
+    background-color: #56baed;
+    border: none;
+    color: black;
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin:10px 10px 10px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.button_profile:hover {
+    background-color: #39ace7;
+}
+
+.button_profile:active {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.logout {
+    margin-top: 38px;
+    background-color: red;
+}
+
+.logout:hover {
+    background-color: darkred;
+    color: ghostwhite;
+}
+
+.leaderboard {
+    width: 500px;
+    padding-left:20px;
+    float: right;
+    font-size:18px;
+    border: 3px solid black;
+    border-radius: 12px;
+}
+
+.leaderboard th, .leaderboard td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* Linie sub fiecare rând */
+}
+
+.leaderboard tbody tr:hover {
+    background-color: #b33434;
+}
+
+.table_top{
+    background-color: dimgrey;
+}
