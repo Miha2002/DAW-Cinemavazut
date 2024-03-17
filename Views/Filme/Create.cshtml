@@ -1,0 +1,53 @@
+﻿@model Proiect_DAW_Cinemavazut.Models.Filme
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Filme</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="titlu" class="control-label"></label>
+                <input asp-for="titlu" class="form-control" />
+                <span asp-validation-for="titlu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="an_lansare" class="control-label"></label>
+                <input asp-for="an_lansare" class="form-control" />
+                <span asp-validation-for="an_lansare" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="descriere" class="control-label"></label>
+                <input asp-for="descriere" class="form-control" />
+                <span asp-validation-for="descriere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="studio" class="control-label"></label>
+                <input asp-for="studio" class="form-control" />
+                <span asp-validation-for="studio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="durata" class="control-label"></label>
+                <input asp-for="durata" class="form-control" />
+                <span asp-validation-for="durata" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

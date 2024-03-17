@@ -1,0 +1,75 @@
+﻿@model Proiect_DAW_Cinemavazut.Models.Utilizatori
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/StyleLogic.css" />
+</head>
+
+<div style="margin: 30px 10px 30px 20px">
+<a class="active" asp-controller="Utilizatori" asp-action="Create"> Sign Up </a>
+<a class="inactive underlineHover" asp-controller="Utilizatori" asp-action="SignIn">Sign In</a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="nume" class="control-label"></label>
+                <input asp-for="nume" class="form-control" />
+                <span asp-validation-for="nume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prenume" class="control-label"></label>
+                <input asp-for="prenume" class="form-control" />
+                <span asp-validation-for="prenume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="parola" class="control-label"></label>
+                <input type="password" asp-for="parola" class="form-control" />
+                <span asp-validation-for="parola" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="telefon" class="control-label"></label>
+                <input asp-for="telefon" class="form-control" />
+                <span asp-validation-for="telefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="data_nastere" class="control-label"></label>
+                <input asp-for="data_nastere" class="form-control" />
+                <span asp-validation-for="data_nastere" class="text-danger"> (min. 13 ani) </span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="data_inscriere" class="control-label"></label>
+                <input asp-for="data_inscriere" class="form-control" />
+                <span asp-validation-for="data_inscriere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rol" class="control-label"></label>
+                <input asp-for="rol" class="form-control" />
+                <span asp-validation-for="rol" class="text-danger"></span>
+            </div> *@
+            <div class="create" style="margin: 30px 10px 30px 20px">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div style="margin-bottom: 50px;">
+    <a asp-controller="Home" asp-action="Index">Inapoi Acasa</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

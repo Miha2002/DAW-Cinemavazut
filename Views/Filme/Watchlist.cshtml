@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Proiect_DAW_Cinemavazut.Models.Filme>
+
+@{
+    ViewData["Title"] = "Galerie";
+}
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>CineMaVazut</title>
+        
+    <link rel="stylesheet" href="~/css/StyleGalerie.css" />
+</head>
+<body>
+    <div class="grid-container">
+        @foreach (var item in Model)
+        {
+            string imagePath = "~/css/Filme/" + item.id_film.ToString() + ".jpeg";
+            
+            <div class="grid-item">
+                <a asp-controller="Filme" asp-action="PaginaFilm" asp-route-id=@item.id_film>
+                    <img src="@Url.Content(imagePath)" alt="@Html.DisplayFor(modelItem => item.titlu)">
+                </a>
+                <h5 style="margin-top:20px;">@Html.DisplayFor(modelItem => item.titlu)</h5>
+            </div>
+        }
+    </div>
+</body>
+

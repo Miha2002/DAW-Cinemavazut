@@ -1,0 +1,144 @@
+﻿@model Proiect_DAW_Cinemavazut.Models.Quizuri
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Quizuri</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id_film)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id_film)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.intrebare1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.intrebare1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns1_corect)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns1_corect)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns1_gresit1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns1_gresit1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns1_gresit2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns1_gresit2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.intrebare2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.intrebare2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns2_corect)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns2_corect)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns2_gresit1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns2_gresit1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns2_gresit2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns2_gresit2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.intrebare3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.intrebare3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns3_corect)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns3_corect)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns3_gresit1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns3_gresit1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns3_gresit2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns3_gresit2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.intrebare4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.intrebare4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns4_corect)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns4_corect)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns4_gresit1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns4_gresit1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns4_gresit2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns4_gresit2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.intrebare5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.intrebare5)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns5_corect)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns5_corect)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns5_gresit1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns5_gresit1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.raspuns5_gresit2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.raspuns5_gresit2)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.id_quiz">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

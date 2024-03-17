@@ -1,0 +1,36 @@
+﻿@model Proiect_DAW_Cinemavazut.Models.Achievements
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Achievements</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.denumire)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.denumire)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.categorie_ach)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.categorie_ach)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.prag)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.prag)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.id_achievement">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

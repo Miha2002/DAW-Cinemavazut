@@ -1,0 +1,152 @@
+﻿@using Proiect_DAW_Cinemavazut.Models;
+@model dynamic
+
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "PaginaFilm";
+}
+
+<link rel="stylesheet" href="~/css/StyleFilm.css" />
+
+<div id="grid_pagina">
+
+    <section id="poza">
+        @{string imagePath = "~/css/Filme/" + Model.Film.id_film.ToString() + ".jpeg";}
+        <img class="img_film" src="@Url.Content(imagePath)">
+    </section>
+
+    <section id="descriere">
+        <div class="content">
+            <div class="grid_desc">
+
+                <h2 id="titlu"> @Model.Film.titlu (@Model.Film.an_lansare) </h2>
+
+                <div id="checkbox">
+                    @if (@HttpContextAccessor?.HttpContext?.Request.Cookies["UserId"] != null)
+                    {
+                        @if (Model.Vazut != null)
+                        {
+                            <form class="toggle" method="post" asp-action="AddVazutList" asp-route-id=@Model.Film.id_film>
+                                <label style="font-size:15px; margin-top:10px;" for="vazut"> Am vazut > </label>
+                                <input style="margin-top:20px;" type="checkbox" name="vazut" onclick="this.form.submit()" checked />
+                            </form>
+
+                            @if (Model.Vazut.favorit == true)
+                            {
+                                <form class="toggle"  method="post" asp-action="AddFavList" asp-route-id=@Model.Film.id_film>
+                                    <label style="font-size:15px; margin-top:10px;" for="favorit"> Favorit > </label>
+                                    <input style="margin-top:20px;" type="checkbox" name="vazut" onclick="this.form.submit()" checked />
+                                </form>
+                            }
+                            else
+                            {
+                                <form class="toggle" method="post" asp-action="AddFavList" asp-route-id=@Model.Film.id_film>
+                                    <label style="font-size:15px; margin-top:10px;" for="favorit"> Favorit > </label>
+                                    <input style="margin-top:20px;" type="checkbox" onclick="this.form.submit()" name="vazut" />
+                                </form>
+                            }
+                        }
+                        else
+                        {
+                            <form class="toggle" method="post" asp-action="AddVazutList" asp-route-id=@Model.Film.id_film>
+                                <label style="font-size:15px; margin-top:10px;" for="vazut"> Am vazut > </label>
+                                <input style="margin-top:20px;" for="vazut" type="checkbox" name="vazut" onclick="this.form.submit()" />
+                            </form>
+
+                            <form class="toggle" method="post" asp-action="AddFavList" asp-route-id=@Model.Film.id_film>
+                                <label style="font-size:15px; margin-top:10px;" for="favorit"> Favorit > </label>
+                                <input style="margin-top:20px;" type="checkbox" name="vazut" onclick="this.form.submit()" />
+                            </form>
+                        }
+                    }
+                    else
+                    {
+                        <h4 style="font-size: 17px;"> Sign In pentru a adauga in lista! </h4>
+                    }
+                </div>
+            </div>
+
+            <h4 class="desc"> @Model.Film.descriere </h4>
+
+            <div class="details">
+                <h5> Durata: @Model.Film.durata min</h5>
+
+                @if (@Model.Film.studio != null)
+                {
+                    <h5> Productie: @Model.Film.studio </h5>
+                }
+                else
+                {
+                    <h5> Productie: _ </h5>
+                }
+            </div>
+
+            @if (@HttpContextAccessor?.HttpContext?.Request.Cookies["UserId"] != null)
+            {
+                <div style="margin-top:10px;">
+                    @{
+                        string view = "Test" + @Model.Film.id_film.ToString();
+                    }
+                    <a class="quiz" asp-controller="Quizuri" asp-action=@view> Quiz </a>
+                </div>
+            }
+
+            @if (@HttpContextAccessor?.HttpContext?.Request.Cookies["UserId"] != null)
+            {   
+                @if (Model.Watchlist == null)
+                {
+                    <a id="watchlist-1" asp-action="AddWatchList" asp-route-id=@Model.Film.id_film>
+                        <p style="margin-top: 20px; margin-left: 12px;">Adauga la watchlist </p>
+                    </a>
+                }
+                else
+                {
+                    <a id="watchlist-2" asp-action="AddWatchList" asp-route-id=@Model.Film.id_film> 
+                        <p style="margin-left: 12px; margin-top: 20px; color: ghostwhite"> Adaugat la watchlist</p></a>
+                }
+            }
+        </div>
+    </section>
+
+    <section id="recenzii">
+       @if (@HttpContextAccessor?.HttpContext?.Request.Cookies["UserId"] == null)
+       {
+            <h4 style="margin-left: 20px; margin-top:20px; border:2px solid gray; border-radius:12px; background-color:lightgray; width:450px;">
+                <p style="margin-left:20px;"> Sign In pentru a lasa o recenzie! </p> </h4>
+       }
+       else
+       {
+            <a style="text-decoration: none;" asp-controller="Recenzii" asp-action="Create" asp-route-id=@Model.Film.id_film>
+                <p id="btn-recenzie"> Creaza o recenzie! </p></a>
+        }
+
+        <div style="margin: 20px 20px 20px 20px">
+            @foreach (var rec in Model.Recenzii)
+            {   
+                <div id="grid_comment">
+                    @{
+                    bool sw = false;
+                    @foreach (var util in Model.Utilizatori)
+                    {
+                        if(util.id_utilizator == rec.id_utilizator && sw == false)
+                        {
+                            <h4 id="nume">@util.nume @util.prenume</h4>
+                            sw = true;
+                        }
+                    }
+                    <div id="border-comment">
+                        <h4 id="comentariu">@rec.titlu</h4>
+                        <h4 id="comentariu2">@rec.comentariu</h4>
+                        <h4 id="comentariu3">@rec.rating / 5</h4>
+                    </div>
+                    }   
+                </div>
+            }
+        </div>
+
+
+    </section>
+
+</div>

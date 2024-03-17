@@ -1,0 +1,133 @@
+﻿@model Proiect_DAW_Cinemavazut.Models.Quizuri
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Quizuri</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="id_film" class="control-label"></label>
+                <input asp-for="id_film" class="form-control" />
+                <span asp-validation-for="id_film" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="intrebare1" class="control-label"></label>
+                <input asp-for="intrebare1" class="form-control" />
+                <span asp-validation-for="intrebare1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns1_corect" class="control-label"></label>
+                <input asp-for="raspuns1_corect" class="form-control" />
+                <span asp-validation-for="raspuns1_corect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns1_gresit1" class="control-label"></label>
+                <input asp-for="raspuns1_gresit1" class="form-control" />
+                <span asp-validation-for="raspuns1_gresit1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns1_gresit2" class="control-label"></label>
+                <input asp-for="raspuns1_gresit2" class="form-control" />
+                <span asp-validation-for="raspuns1_gresit2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="intrebare2" class="control-label"></label>
+                <input asp-for="intrebare2" class="form-control" />
+                <span asp-validation-for="intrebare2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns2_corect" class="control-label"></label>
+                <input asp-for="raspuns2_corect" class="form-control" />
+                <span asp-validation-for="raspuns2_corect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns2_gresit1" class="control-label"></label>
+                <input asp-for="raspuns2_gresit1" class="form-control" />
+                <span asp-validation-for="raspuns2_gresit1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns2_gresit2" class="control-label"></label>
+                <input asp-for="raspuns2_gresit2" class="form-control" />
+                <span asp-validation-for="raspuns2_gresit2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="intrebare3" class="control-label"></label>
+                <input asp-for="intrebare3" class="form-control" />
+                <span asp-validation-for="intrebare3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns3_corect" class="control-label"></label>
+                <input asp-for="raspuns3_corect" class="form-control" />
+                <span asp-validation-for="raspuns3_corect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns3_gresit1" class="control-label"></label>
+                <input asp-for="raspuns3_gresit1" class="form-control" />
+                <span asp-validation-for="raspuns3_gresit1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns3_gresit2" class="control-label"></label>
+                <input asp-for="raspuns3_gresit2" class="form-control" />
+                <span asp-validation-for="raspuns3_gresit2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="intrebare4" class="control-label"></label>
+                <input asp-for="intrebare4" class="form-control" />
+                <span asp-validation-for="intrebare4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns4_corect" class="control-label"></label>
+                <input asp-for="raspuns4_corect" class="form-control" />
+                <span asp-validation-for="raspuns4_corect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns4_gresit1" class="control-label"></label>
+                <input asp-for="raspuns4_gresit1" class="form-control" />
+                <span asp-validation-for="raspuns4_gresit1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns4_gresit2" class="control-label"></label>
+                <input asp-for="raspuns4_gresit2" class="form-control" />
+                <span asp-validation-for="raspuns4_gresit2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="intrebare5" class="control-label"></label>
+                <input asp-for="intrebare5" class="form-control" />
+                <span asp-validation-for="intrebare5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns5_corect" class="control-label"></label>
+                <input asp-for="raspuns5_corect" class="form-control" />
+                <span asp-validation-for="raspuns5_corect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns5_gresit1" class="control-label"></label>
+                <input asp-for="raspuns5_gresit1" class="form-control" />
+                <span asp-validation-for="raspuns5_gresit1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raspuns5_gresit2" class="control-label"></label>
+                <input asp-for="raspuns5_gresit2" class="form-control" />
+                <span asp-validation-for="raspuns5_gresit2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

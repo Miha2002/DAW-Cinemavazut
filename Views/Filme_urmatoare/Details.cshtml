@@ -1,0 +1,36 @@
+﻿@model Proiect_DAW_Cinemavazut.Models.Filme_urmatoare
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Filme_urmatoare</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.comentariu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.comentariu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id_film)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id_film)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id_utilizator)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id_utilizator)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.id_urmatoare">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

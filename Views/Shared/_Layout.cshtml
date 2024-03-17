@@ -1,0 +1,117 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinemavazut</title>
+    <link href="~/favicon.ico" rel="shortcut icon"/>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Proiect_DAW_Cinemavazut.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul class="navigation_list">
+            <li><a class="button" asp-area="" asp-controller="Home" asp-action="Index"
+                   style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 20px;color: white;"> Acasă </a>
+            </li>
+            <li>
+                <a class="dropdown" asp-controller="Filme" asp-action="Galerie" asp-route-id=0
+                   style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 20px;color: white;">Filme</a>
+                <div>
+                    <ul>
+                        <li><a asp-controller="Filme" asp-action="Galerie" asp-route-id=1
+                               style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 15px;color: white;"> Actiune </a>
+                        </li>
+                        <li><a asp-controller="Filme" asp-action="Galerie" asp-route-id=2
+                               style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 15px;color: white;"> Comedie </a>
+                        </li>
+                        <li><a asp-controller="Filme" asp-action="Galerie" asp-route-id=3
+                               style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 15px;color: white;"> Groaza </a>
+                        </li>
+                        <li><a asp-controller="Filme" asp-action="Galerie" asp-route-id=4
+                               style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 15px;color: white;"> Aventura </a>
+                        </li>
+                        <li><a asp-controller="Filme" asp-action="Galerie" asp-route-id=5
+                               style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 15px;color: white;"> Romanta </a>
+                        </li>
+                        <li><a asp-controller="Filme" asp-action="Galerie" asp-route-id=6
+                               style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 15px;color: white;"> Arta </a>
+                        </li>
+                        <li><a asp-controller="Filme" asp-action="Galerie" asp-route-id=7
+                                style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 15px;color: white;"> Animatie </a>
+                        </li>
+                        <li><a asp-controller="Filme" asp-action="Galerie" asp-route-id=8
+                               style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 15px;color: white;"> Drama </a>
+                        </li>
+                        <li><a asp-controller="Filme" asp-action="Galerie" asp-route-id=9
+                               style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 15px;color: white;"> ScienceFiction </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            
+            @* <li><a class="button" asp-area="" asp-controller="Filme" asp-action="Index"
+                   style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 20px;color: white;"> Filme </a>
+            </li> *@
+            <li><a class="button" asp-area="" asp-controller="Home" asp-action="Contact"
+                   style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 20px;color: white;"> Contact </a>
+            </li>
+
+            @if (@HttpContextAccessor?.HttpContext?.Request.Cookies["UserRol"] == "100")
+            {
+                <li>
+                    <a class="button" asp-area="" asp-controller="Home" asp-action="Admin"
+                       style="text-decoration: none;margin-right: 20px;margin-left: 20px;font-size: 20px;color: white;"> Administration </a>
+                </li>
+            }
+
+        </ul>
+
+        @if (@HttpContextAccessor?.HttpContext?.Request.Cookies["UserId"] != null)
+        {
+            Console.WriteLine(@HttpContextAccessor?.HttpContext?.Request.Cookies["UserEmail"]);
+            <a class="pfp" asp-area="" asp-controller="Utilizatori" asp-action="Profile" asp-route-id=@HttpContextAccessor?.HttpContext?.Request.Cookies["UserId"]
+               style="position: relative; bottom: 30px;margin-right: 20px;margin-left: 20px;font-size: 20px;float: right;">
+                <img class="img_pfp" src="~/css/Default-Profile.jpg" style="height: 40px; width: 40px; border-radius: 50%;">
+            </a>
+        }
+        else{
+        <a class="pfp" asp-area="" asp-controller="Utilizatori" asp-action="SignIn"
+               style="position: relative; bottom: 30px;margin-right: 20px;margin-left: 20px;font-size: 20px;float: right;">
+            <img class="img_pfp" src="~/css/Default-Profile.jpg" style="height: 40px; width: 40px; border-radius: 50%;">
+        </a>
+        }
+
+        <div class="search-container">
+            <form asp-controller="Filme" asp-action="Search">
+                <input type="text" placeholder="Search.." name="SearchString">
+                <button type="submit" value="Filter"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+    <div class="container" style="color:black; margin: 5px 0px 15px 0px; position: fixed; bottom: 0px; right: 0px; text-align:right;">
+        &copy; 2023 - Cinemavazut - <a style="text-decoration:none;" href="https://blogs.mtdv.me/articles/YwNdnxFQN4">Privacy</a>
+    </div>
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+

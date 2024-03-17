@@ -1,0 +1,104 @@
+﻿@using Proiect_DAW_Cinemavazut.Models;
+@model dynamic
+
+@{
+    ViewData["Title"] = "Achievements";
+}
+
+<link rel="stylesheet" href="~/css/StyleBadges.css" />
+
+<div class="container-cu-badge">
+    <div class="container">
+        <div class="text-box">
+            <p class="txt">Achievements pentru filme:</p>
+        </div>
+        <div class="images-box">
+            @foreach(var ach in Model.Ach_Filme)
+            {
+                bool sw = false;
+                @foreach (var util in Model.Utilizator)
+                {
+                    if(ach.id_achievement == util.id_achievement && sw == false)
+                    {
+                        <div class="badge-container">
+                            <img src="~/css/Badge/badge.png" alt=@ach.denumire>
+                            <div class="hover-text">@ach.denumire</div>
+                        </div>
+                        sw = true;
+                    }
+                    
+                }
+                if(sw == false)
+                {
+                    <div class="badge-container">
+                        <img src="~/css/Badge/badge_gray.png" alt=@ach.denumire>
+                        <div class="hover-text">@ach.denumire</div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-box">
+            <p class="txt">Achievements pentru recenzii:</p>
+        </div>
+        <div class="images-box">
+            @foreach (var ach in Model.Ach_Recenzii)
+            {
+                bool sw = false;
+                @foreach (var util in Model.Utilizator)
+                {
+                    if (ach.id_achievement == util.id_achievement && sw == false)
+                    {
+                        <div class="badge-container">
+                            <img src="~/css/Badge/badge.png" alt=@ach.denumire>
+                            <div class="hover-text">@ach.denumire</div>
+                        </div>
+                        sw = true;
+                    }
+
+                }
+                if (sw == false)
+                {
+                    <div class="badge-container">
+                        <img src="~/css/Badge/badge_gray.png" alt=@ach.denumire>
+                        <div class="hover-text">@ach.denumire</div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    @* <div class="container">
+        <div class="text-box">
+            <p class="txt">Achievements pentru quiz-uri:</p>
+        </div>
+        <div class="images-box">
+            @foreach (var ach in Model.Ach_Quiz)
+            {
+                bool sw = false;
+                @foreach (var util in Model.Utilizator)
+                {
+                    if (ach.id_achievement == util.id_achievement && sw == false)
+                    {
+                        <div class="badge-container">
+                            <img src="~/css/Badge/badge.png" alt=@ach.denumire>
+                            <div class="hover-text">@ach.denumire</div>
+                        </div>
+                        sw = true;
+                    }
+
+                }
+                if (sw == false)
+                {
+                    <div class="badge-container">
+                        <img src="~/css/Badge/badge_gray.png" alt=@ach.denumire>
+                        <div class="hover-text">@ach.denumire</div>
+                    </div>
+                }
+            }
+
+        </div>
+    </div> *@
+</div>

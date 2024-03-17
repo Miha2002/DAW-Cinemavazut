@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Administration";
+}
+
+<style>
+    #btn{
+        border: 2px solid black;
+        border-radius: 12px;
+        background-color: lightgray;
+        margin-top: 20px;
+        text-decoration: none;
+        color: black;
+        width: 180px;
+        text-align: center;
+    }
+</style>
+
+<div id="col-2" style="display: flex; flex-direction: column;">
+
+    <a  id="btn" asp-controller="Utilizatori" asp-action="Index"> Utilizatori </a>
+
+    <a id="btn" asp-controller="Filme" asp-action="Index"> Filme </a>
+
+    <a id="btn" asp-controller="Categorii_filme" asp-action="Index"> Categorii Filme </a>
+
+    <a id="btn" asp-controller="FilmCategories" asp-action="Index"> Filme -> Categorii </a>
+
+    <a id="btn" asp-controller="Filme_vazute" asp-action="Index"> Filme vazute </a>
+
+    <a id="btn" asp-controller="Filme_urmatoare" asp-action="Index"> Filme adaugate in watchlist-uri </a>
+
+    <a id="btn" asp-controller="Recenzii" asp-action="Index"> Recenzii </a>
+
+    <a id="btn" asp-controller="Quizuri" asp-action="Index"> Quizuri </a>
+
+    <a id="btn" asp-controller="Achievements" asp-action="Index"> Achievements </a>
+</div>

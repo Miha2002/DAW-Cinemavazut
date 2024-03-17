@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Proiect_DAW_Cinemavazut.Models.Filme>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.titlu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.an_lansare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.descriere)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.studio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.durata)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.titlu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.an_lansare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descriere)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.durata)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id_film">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id_film">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id_film">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

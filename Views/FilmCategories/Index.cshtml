@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Proiect_DAW_Cinemavazut.Models.FilmCategorie>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id_film)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.id_categorie)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_film)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_categorie)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id_filmcategorie">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id_filmcategorie">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id_filmcategorie">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

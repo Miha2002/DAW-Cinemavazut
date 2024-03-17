@@ -1,0 +1,238 @@
+﻿@model IEnumerable<Proiect_DAW_Cinemavazut.Models.Quizuri>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id_film)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.intrebare1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns1_corect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns1_gresit1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns1_gresit2)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_film)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intrebare1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns1_corect)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns1_gresit1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns1_gresit2)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id_quiz">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id_quiz">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id_quiz">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.intrebare2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns2_corect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns2_gresit1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns2_gresit2)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intrebare2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns2_corect)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns2_gresit1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns2_gresit2)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id_quiz">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id_quiz">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id_quiz">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.intrebare3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns3_corect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns3_gresit1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns3_gresit2)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intrebare3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns3_corect)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns3_gresit1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns3_gresit2)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id_quiz">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id_quiz">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id_quiz">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.intrebare4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns4_corect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns4_gresit1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns4_gresit2)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intrebare4)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns4_corect)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns4_gresit1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns4_gresit2)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id_quiz">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id_quiz">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id_quiz">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.intrebare5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns5_corect)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns5_gresit1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raspuns5_gresit2)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intrebare5)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns5_corect)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns5_gresit1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raspuns5_gresit2)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id_quiz">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id_quiz">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id_quiz">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

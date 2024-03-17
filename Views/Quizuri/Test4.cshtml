@@ -1,0 +1,67 @@
+﻿@model Proiect_DAW_Cinemavazut.Models.Quizuri
+
+@{
+    ViewData["Title"] = "Test";
+}
+
+<head>
+    <title>Quiz Simplu</title>
+</head>
+
+<body>
+
+    <form id="quizForm">
+        <div class="question">
+            <br>
+            <p>Mana intinsa care nu spune o poveste, nu primeste...</p>
+            <input type="radio" id="pomana" name="question1" value="Pomana">
+            <label for="Pomana">Pomana</label><br>
+
+            <input type="radio" id="mancare" name="question1" value="Mancare">
+            <label for="Mancare">Mancare</label><br><br>
+        </div>
+
+        <div class="question">
+            <br>
+            <p>Cine a regizat Filantropica?</p>
+            <input type="radio" id="Nae Caranfil" name="question2" value="Nae Caranfil">
+            <label for="Nae Caranfil">Nae Caranfil</label><br>
+
+            <input type="radio" id="Gheorghe Dinica" name="question2" value="Gheorghe Dinica">
+            <label for="Gheorghe Dinica">Gheorghe Dinica</label><br><br>
+        </div>
+
+        <div class="question">
+            <br>
+            <p>Personajul principal este jucat de:</p>
+            <input type="radio" id="Mircea Diaconu" name="question3" value="Marin Moraru">
+            <label for="Marin Moraru">Marin Moraru</label><br>
+
+            <input type="radio" id="Mircea Diaconu" name="question3" value="Mircea Diaconu">
+            <label for="Mircea Diaconu">Mircea Diaconu</label><br><br>
+        </div>
+
+        <input type="submit" value="Trimite Răspunsuri">
+    </form>
+
+
+    <script>
+        document.getElementById('quizForm').onsubmit = function (event) {
+            event.preventDefault();
+
+            var score = 0;
+            if (document.querySelector('input[name="question1"]:checked')?.value === "Pomana") score++;
+            if (document.querySelector('input[name="question2"]:checked')?.value === "Nae Caranfil") score++;
+            if (document.querySelector('input[name="question3"]:checked')?.value === "Mircea Diaconu") score++;
+            localStorage.setItem('quizScore', score);
+            
+
+            if (score == 3) {
+                window.location.href = '@Url.Action("TestResult","Quizuri")';
+            }
+            else {
+                window.location.href = '@Url.Action("TestFailed","Quizuri")';
+            }
+        };
+    </script>
+</body>

@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "TestResult";
+}
+
+<head>
+    <title>Rezultatul Quiz-ului</title>
+    <style>
+        .score {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="score">
+        <h4>
+        FELICITARI!
+
+        Ai obtinut scorul maxim de <span id="score"></span> puncte!
+        </h4>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var score = localStorage.getItem('quizScore');
+            document.getElementById('score').textContent = score;
+        });
+    </script>
+
+</body>

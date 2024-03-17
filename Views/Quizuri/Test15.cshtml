@@ -1,0 +1,66 @@
+﻿@model Proiect_DAW_Cinemavazut.Models.Quizuri
+
+@{
+    ViewData["Title"] = "Test";
+}
+
+<head>
+    <title>Quiz Simplu</title>
+</head>
+
+<body>
+    <form id="quizForm">
+        <div class="question">
+            <br>
+            <p>Leonardo DiCaprio a luat un Oscar pentru rolul sau din inception</p>
+            <input type="radio" id="Adevarat" name="question1" value="Adevarat">
+            <label for="Adevarat">Adevarat</label><br>
+
+            <input type="radio" id="Fals" name="question1" value="Fals">
+            <label for="Fals">Fals</label><br><br>
+        </div>
+
+        <div class="question">
+            <br>
+            <p>Care era obiectul pe care Cobb il folosea pentru a sti daca se afla intr-un vis?</p>
+
+            <input type="radio" id="Un titirez" name="question2" value="Un titirez">
+            <label for="Un titirez">Un titirez</label><br>
+
+            <input type="radio" id="o clepsidra" name="question2" value="o clepsidra">
+            <label for="o clepsidra">o clepsidra</label><br><br>
+        </div>
+
+        <div class="question">
+            <br>
+            <p>Inception a fost lansat in...</p>
+            <input type="radio" id="2013" name="question3" value="2013">
+            <label for="2013">2013</label><br>
+
+            <input type="radio" id="2010" name="question3" value="2010">
+            <label for="2010">2010</label><br><br>
+        </div>
+
+        <input type="submit" value="Trimite Răspunsuri">
+    </form>
+
+    <script>
+        document.getElementById('quizForm').onsubmit = function (event) {
+            event.preventDefault();
+
+            var score = 0;
+            if (document.querySelector('input[name="question1"]:checked')?.value === "Fals") score++;
+            if (document.querySelector('input[name="question2"]:checked')?.value === "Un titirez") score++;
+            if (document.querySelector('input[name="question3"]:checked')?.value === "2010") score++;
+            localStorage.setItem('quizScore', score);
+            window.location.href = '@Url.Action("TestResult","Quizuri")';
+
+            if (score == 3) {
+                window.location.href = '@Url.Action("TestResult","Quizuri")';
+            }
+            else {
+                window.location.href = '@Url.Action("TestFailed","Quizuri")';
+            }
+        };
+    </script>
+</body>

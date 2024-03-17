@@ -1,0 +1,122 @@
+﻿@using Proiect_DAW_Cinemavazut.Models;
+@model dynamic
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<link rel="stylesheet" href="~/css/StyleProfile.css" />
+
+<h1 style="margin-top=50px; margin-bottom=20px;"> Pagină de profil </h1>
+
+<div class="row">
+    <div class="column left">
+        <table class="table">
+            <tbody>
+            <tr>
+                <th>
+                    Nume :
+                </th>
+                <th>
+                        @Model.Profil.nume
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Prenume :
+                </th>
+                <th>
+                        @Model.Profil.prenume
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Email :
+                </th>
+                <th>
+                        @Model.Profil.email
+                </th>
+            </tr>
+        
+            <tr>
+                <th>
+                    Telefon :
+                </th>
+
+                    @if (Model.Profil.telefon != null)
+                {
+                    <th>
+                         @Model.Profil.telefon
+                    </th>
+                }
+                else
+                {
+                    <th> - </th>
+                }
+            </tr>
+        
+            <tr>
+                <th>
+                    Data Nastere :
+                </th>
+                <th>
+                        @Model.Profil.data_nastere.ToShortDateString()
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Rol utilizator :
+                </th>
+                @if (Model.Profil.rol == 1)
+                {
+                    <th> Standard User </th>
+                }
+                    else if (Model.Profil.rol == 100)
+                {
+                    <th> Administrator </th>
+                }
+            </tr>
+        </tbody>
+        </table>
+
+        <a class="button_profile" asp-action="EditProfile" asp-route-id=@Model.Profil.id_utilizator>Edit</a>
+        <a class="button_profile logout" asp-action="DeleteCookie"> Logout </a>
+    </div>
+
+    <div class="column middle">
+        <a class="button_profile" asp-controller="Filme" asp-action="GaleriePersonala"> Filme văzute </a>
+        <a class="button_profile" asp-controller="Filme" asp-action="Watchlist"> Filme de văzut </a>
+        <a class="button_profile" asp-controller="Filme" asp-action="Favorite"> Favorite </a>
+        <a class="button_profile" asp-controller="Achievements" asp-action="Badges"> Achievements </a>       
+    </div>
+
+    <div class="column right">
+            <table class="leaderboard">
+                <thead class="table_top">
+                    <tr>
+                        <th>Poziție</th>
+                        <th>Nume</th>
+                        <th>Scor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @if (true)
+                {
+                    int i = 1;
+                    @foreach (var item in Model.Utilizatori)
+                    {
+                        <tr>
+                            <td>@i</td>
+                            <td>@item.nume</td>
+                            <td>@item.scor</td>
+                        </tr>
+                        i++;
+                    }
+                }
+
+            </tbody>
+            </table>
+    </div>
+</div>
+
+

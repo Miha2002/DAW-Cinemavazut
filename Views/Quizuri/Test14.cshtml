@@ -1,0 +1,66 @@
+﻿@model Proiect_DAW_Cinemavazut.Models.Quizuri
+
+@{
+    ViewData["Title"] = "Test";
+}
+
+<head>
+    <title>Quiz Simplu</title>
+</head>
+
+<body>
+    <form id="quizForm">
+        <div class="question">
+            <br>
+            <p>Cine a facut coloana sonora?</p>
+            <input type="radio" id="Hans Florian Zimmer" name="question1" value="Hans Florian Zimmer">
+            <label for="Hans Florian Zimmer">Hans Florian Zimmer</label><br>
+
+            <input type="radio" id="Hans Christian Andersen" name="question1" value="Hans Christian Andersen">
+            <label for="Hans Christian Andersen">Hans Christian Andersen</label><br><br>
+        </div>
+
+        <div class="question">
+            <br>
+            <p>In prezenta gravitatiei unei gauri negre, timpul ...</p>
+
+            <input type="radio" id="intra intr-un time loop" name="question2" value="intra intr-un time loop">
+            <label for="intra intr-un time loop">intra intr-un time loop</label><br>
+
+            <input type="radio" id="se dilata" name="question2" value="se dilata">
+            <label for="se dilata">se dilata</label><br><br>
+        </div>
+
+        <div class="question">
+            <br>
+            <p>Joseph Cooper trebuia sa se intoarca din misiune</p>
+            <input type="radio" id="Cand el si fiica lui vor avea aceeasi varsta" name="question3" value="Cand el si fiica lui vor avea aceeasi varsta">
+            <label for="Cand el si fiica lui vor avea aceeasi varsta">Cand el si fiica lui vor avea aceeasi varsta</label><br>
+
+            <input type="radio" id="De Craciun" name="question3" value="De Craciun">
+            <label for="De Craciun">De Craciun</label><br><br> 
+        </div>
+
+        <input type="submit" value="Trimite Răspunsuri">
+    </form>
+
+
+    <script>
+        document.getElementById('quizForm').onsubmit = function (event) {
+            event.preventDefault();
+
+            var score = 0;
+            if (document.querySelector('input[name="question1"]:checked')?.value === "Hans Florian Zimmer") score++;
+            if (document.querySelector('input[name="question2"]:checked')?.value === "se dilata") score++;
+            if (document.querySelector('input[name="question3"]:checked')?.value === "Cand el si fiica lui vor avea aceeasi varsta") score++;
+            localStorage.setItem('quizScore', score);
+            
+            if (score == 3) {
+                window.location.href = '@Url.Action("TestResult","Quizuri")';
+            }
+            else {
+                window.location.href = '@Url.Action("TestFailed","Quizuri")';
+            }
+        };
+    </script>
+</body>
